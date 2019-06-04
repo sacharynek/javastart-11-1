@@ -56,9 +56,13 @@ public class SubjectArray {
             if (!contains(sub)) {
                 add(sub, counter);
                 counter++;
+                System.out.println("obiet został dodany: " + sub);
+            } else {
+                System.out.println("Obiekt nie został dodany! Wpisz dane ponownie");
             }
             if (counter >= getTabLength()) {
                 flag = false;
+                System.out.println("tablica jest pełna! Kończymy pracę!");
             }
         }
     }
