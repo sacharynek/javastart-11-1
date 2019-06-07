@@ -12,10 +12,12 @@ public class Main {
 
             System.out.println("Podaj nazwe przedmiotu");
             String name = scanner.nextLine();
+
             System.out.println("Podaj ilość punktów ects");
             int ects = scanner.nextInt();
             System.out.println("Podaj ilość godzin w semestrze");
             int hours = scanner.nextInt();
+            scanner.nextLine();
 
             Subject sub = new Subject(name, ects, hours);
             if (!sa.contains(sub)) {
