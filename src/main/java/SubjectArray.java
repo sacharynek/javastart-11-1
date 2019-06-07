@@ -8,7 +8,7 @@ public class SubjectArray {
         this.tab = new Subject[length];
     }
 
-    public boolean contains(Subject subject) {
+    boolean contains(Subject subject) {
         boolean flag = false;
         for (Subject sub : tab) {
             if (subject.equals(sub)) {
@@ -20,7 +20,7 @@ public class SubjectArray {
         return flag;
     }
 
-    public boolean add(Subject subject, int position) {
+    boolean add(Subject subject, int position) {
         this.tab[position] = subject;
         return true;
     }
@@ -32,7 +32,7 @@ public class SubjectArray {
                 '}';
     }
 
-    public int getTabLength() {
+    int getTabLength() {
         return this.tab.length;
     }
 
